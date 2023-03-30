@@ -4,7 +4,7 @@
       <h2>Customer Reviews</h2>
       <hr />
       <div class="row">
-        <div class="col-md-12 col-lg-4 col-sm-12">
+        <div class="col-md-6 col-lg-4 col-sm-12">
           <div class="testimonial">
             <div class="testimonial-content">
               <p>
@@ -24,7 +24,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4 col-sm-12">
+        <div class="col-md-6 col-lg-4 col-sm-12">
           <div class="testimonial">
             <div class="testimonial-content">
               <p>
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4 col-sm-12">
+        <div class="col-md-6 col-lg-4 col-sm-12">
           <div class="testimonial">
             <div class="testimonial-content">
               <p>
@@ -62,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4 col-sm-12">
+        <div class="col-md-6 col-lg-4 col-sm-12">
           <div class="testimonial">
             <div class="testimonial-content">
               <p>
@@ -81,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4 col-sm-12">
+        <div class="col-md-6 col-lg-4 col-sm-12">
           <div class="testimonial">
             <div class="testimonial-content">
               <p>
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4 col-sm-12">
+        <div class="col-md-6 col-lg-4 col-sm-12">
           <div class="testimonial">
             <div class="testimonial-content">
               <p>

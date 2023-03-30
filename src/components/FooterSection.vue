@@ -7,7 +7,7 @@
         </div>
       </div>
 
-      <div class="col-md-12 col-lg-4 col-sm-12">
+      <div class="col-md-12 col-lg-4 col-sm-12 contact-us">
         <P><h3>Contact Us</h3></P>
         <hr />
 
@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style scoped>
+.contact-us {
+  margin-top: 30px;
+}
 .book-now {
   position: relative;
 }

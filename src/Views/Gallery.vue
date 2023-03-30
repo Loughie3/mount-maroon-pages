@@ -94,13 +94,13 @@ export default {
           src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/6636776a-aec5-4de1-8cb9-4fe370ec7499.jpeg?im_w=1440",
         },
         {
-          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/7570ed53-bb53-429d-a20a-64772b75fba0.jpeg?im_w=1440",
+          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/1d2d7daf-c57e-404b-8c5d-660994f5a909.jpeg?im_w=1440",
         },
         {
-          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/6636776a-aec5-4de1-8cb9-4fe370ec7499.jpeg?im_w=1440",
+          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/c7049a70-97ef-4ee3-af38-15e914d0c683.jpeg?im_w=1440",
         },
         {
-          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/7570ed53-bb53-429d-a20a-64772b75fba0.jpeg?im_w=1440",
+          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/15666301-1412-4570-aced-b0bccb68a474.jpeg?im_w=1440",
         },
       ],
     };
@@ -115,15 +115,19 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .images {
   padding: 10px;
-  background-color: rgb(255, 250, 250);
+  background-color: rgb(39, 38, 38);
+}
+hr {
+  color: white;
 }
 h1 {
   margin-top: 50px;
+  color: white;
 }
 .gallery {
-  background-color: rgb(255, 248, 248);
+  background-color: rgb(39, 38, 38);
 }
 </style>

@@ -92,6 +92,89 @@
     </div>
   </section>
 
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 col-sm-12">
+          <div class="feature">
+            <h2>The House</h2>
+            <hr />
+            <p>
+              Our house is the perfect retreat for a couple, offering three
+              decks and outdoor undercover areas with stunning views. Enjoy
+              outdoor dining with the fold-out tables provided, or relax in one
+              of our two hammocks. For entertainment, we have an HD TV and an
+              open Netflix account, but please note that we don't have WiFi or
+              Free to Air. You can use your Telstra 4G mobile service for
+              hotspotting.
+            </p>
+            <p>
+              The kitchen is fully equipped for self-catering, with a microwave,
+              oven, kettle, and toaster, as well as pantry staples and a
+              well-stocked spice rack. You can even make wood-fired pizzas! The
+              nearest supermarket is in Boonah at Drake's IGA, and Oppy's Fruit
+              and Veg offers fresh local produce. We also recommend the two
+              quality butchers in town for your supplies.
+            </p>
+            <p>
+              and we have extra wood for sale at the farm. Please note that fire
+              restrictions may apply in this rural area. If you need to work, we
+              provide an office workspace complete with an extra screen."
+              Outside, you can gather around the fire pit (weather permitting),
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6 col-sm-12">
+          <div class="feature">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner container">
+                <div
+                  v-for="(item, index) in house"
+                  :key="index"
+                  :class="
+                    index === 0 ? 'carousel-item active' : 'carousel-item '
+                  "
+                >
+                  <img :src="item.src" class="img-fluid" />
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div
     class="banner"
     style="
@@ -107,17 +190,41 @@ import TestimonialSection from "../components/TestimonialSection.vue";
 import HeaderHero from "../components/HeaderHero.vue";
 
 export default {
+  mounted() {},
   name: "HomeView",
   components: { TestimonialSection, HeaderHero },
+
   data() {
     return {
       backgroundImage: require("../assets/Boonah.jpg"),
+      house: [
+        {
+          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/b4f51cb7-b8dd-4415-9c2e-169824162cb0.jpeg?im_w=1440 ",
+        },
+        {
+          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/0eaadefc-328a-4ef1-bde7-df326e1541b1.jpeg?im_w=1440",
+        },
+        {
+          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/bdcb5b35-9c8d-4526-92da-24e5128b62cb.jpeg?im_w=1440",
+        },
+        {
+          src: "https://a0.muscache.com/im/pictures/miso/Hosting-53084565/original/ce06f36d-4446-430a-97e3-682c895cddcb.jpeg?im_w=1440",
+        },
+      ],
     };
   },
 };
 </script>
 
 <style scoped>
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+.carousel-inner img {
+  height: 500px; /* set a fixed height */
+  object-fit: cover; /* ensure the images fit within the container while maintaining their aspect ratio */
+}
 .container {
   margin-bottom: 100px;
 }
@@ -134,7 +241,7 @@ export default {
 }
 
 .features {
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
   margin-top: 50px;
 }
 
